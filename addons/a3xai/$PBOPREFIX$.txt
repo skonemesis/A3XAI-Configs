@@ -1,0 +1,4 @@
+//<'a3xai.pbo' properties via Mikero's dos tools, dll version 9.89>
+prefix=A3XAI;
+//PboType=Arma Addon;
+//</properties>
