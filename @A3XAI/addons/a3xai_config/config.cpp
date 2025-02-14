@@ -405,34 +405,34 @@ class CfgA3XAISettings {
 	//Classnames of land vehicle types to use, with the maximum amount of each type to spawn.
 	landVehicleList[] = {
 		{"B_APC_Tracked_01_rcws_F",1},			// panter
-		//{"Exile_Car_Hatchback_Sport_Red",1},
-		//{"Exile_Car_SUV_Red",1},
-		//{"I_APC_tracked_03_cannon_F",1},
+		{"Exile_Car_Hatchback_Sport_Red",1},
+		{"Exile_Car_SUV_Red",1},
+		{"I_APC_tracked_03_cannon_F",1},
 		{"Exile_Car_Offroad_Armed_Guerilla01",1},
-		//{"B_T_LSV_01_armed_F",1},				// Prowler hmg
-		{"O_T_LSV_02_armed_F",1},				// quilin minigun
+		{"B_T_LSV_01_armed_F",1},			// Prowler hmg
+		{"O_T_LSV_02_armed_F",1},			// quilin minigun
 		{"CUP_B_Jackal2_L2A1_GB_W",2},
 		{"CUP_B_HMMWV_M2_GPK_USA",2},
-		//{"I_MRAP_03_F",1},
-		//{"B_MRAP_01_F",1},
-		//{"O_MRAP_02_F",1},
-		//{"Exile_Car_Van_Black",1},
+		{"I_MRAP_03_F",1},
+		{"B_MRAP_01_F",1},
+		{"O_MRAP_02_F",1},
+		{"Exile_Car_Van_Black",1},
 		{"I_MBT_03_cannon_F",2},
 		{"Exile_Car_HEMMT",2},
 		{"Exile_Car_Tempest",1},
 		{"Exile_Car_Zamak",1},
 		{"Exile_Car_Offroad_Armed_Guerilla01",1},
 		{"I_APC_Wheeled_03_cannon_F",1},  		// GORGON
-		//{"O_MRAP_02_hmg_F",1},				// IFRIT
-		{"I_MRAP_03_gmg_F",1},					// strider
+		{"O_MRAP_02_hmg_F",1},				// IFRIT
+		{"I_MRAP_03_gmg_F",1},				// strider
 		{"B_MRAP_01_hmg_F",1},
 		{"B_APC_Wheeled_01_cannon_F",1},		// marshall
-		//{"O_MBT_02_arty_F",1},				// artillery
+		{"O_MBT_02_arty_F",1},				// artillery
 		{"B_APC_Tracked_01_AA_F",1},			//cheetah
 		{"I_APC_tracked_03_cannon_F",1}, 		// mora
 		{"O_APC_Tracked_02_cannon_F",1},		// kamysh
-		{"O_MBT_02_cannon_F",2},				// t-100
-		{"B_MBT_01_TUSK_F",2},					// slammer up
+		{"O_MBT_02_cannon_F",2},			// t-100
+		{"B_MBT_01_TUSK_F",2},				// slammer up
 		{"O_APC_Wheeled_02_rcws_F",1}
 				
 	};
@@ -459,17 +459,16 @@ class CfgA3XAISettings {
 	//Air vehicles to use as reinforcement vehicles. Default: {"B_Heli_Transport_01_F","B_Heli_Light_01_armed_F"}
 	//Armed air vehicles will detect and engage players within reinforcement area. Unarmed air vehicles will deploy an AI paradrop group.
 	airReinforcementVehicles[] = {
-		/*
-		//"B_Heli_Transport_01_F",  			// ghost hawk armed
-		//"B_Heli_Transport_03_F",			// huron armed
-		//"CUP_B_C130J_USMC"				// C130
-		//"B_Heli_Transport_03_unarmed_F" 		// huron
-		//"Exile_Chopper_Mohawk_FIA"
-		//"B_Heli_Light_01_armed_F"    			// pawnee
-		//"B_Plane_CAS_01_dynamicLoadout_F",		// wipeout
-		//"B_Heli_Attack_01_F"				// ah-99
-		*/
-
+		
+		"B_Heli_Transport_01_F",  			// ghost hawk armed
+		"B_Heli_Transport_03_F",			// huron armed
+		"CUP_B_C130J_USMC"				// C130
+		"B_Heli_Transport_03_unarmed_F" 		// huron
+		"Exile_Chopper_Mohawk_FIA"
+		"B_Heli_Light_01_armed_F"    			// pawnee
+		"B_Plane_CAS_01_dynamicLoadout_F",		// wipeout
+		"B_Heli_Attack_01_F"				// ah-99
+		
 		// Heli
 		{"B_Heli_Transport_01_F",2},			// GHOST HAWK
 		{"B_Heli_Transport_03_F",2},			// 
@@ -617,7 +616,7 @@ class CfgA3XAISettings {
 		{"aimingAccuracy",0.10,0.15},
 		{"aimingShake",0.40,0.60},
 		{"aimingSpeed",0.40,0.60},
-		{"spotDistance",0.40,0.60},
+		{"spotDistance",0.30,0.50},
 		{"spotTime",0.30,0.50},
 		{"courage",0.40,0.60},
 		{"reloadSpeed",0.40,0.60},
@@ -630,7 +629,7 @@ class CfgA3XAISettings {
 		{"aimingAccuracy",0.15,0.20},
 		{"aimingShake",0.50,0.70},
 		{"aimingSpeed",0.50,0.70},
-		{"spotDistance",0.70,0.80},
+		{"spotDistance",0.30,0.50},
 		{"spotTime",0.30,0.50},
 		{"courage",0.85,0.90},
 		{"reloadSpeed",0.50,0.80},
@@ -640,12 +639,12 @@ class CfgA3XAISettings {
 	
 	//AI skill settings level 3 (Skill, Minimum skill, Maximum skill). Defaults: Accuracy 0.20-0.25, Others 0.60-0.80
 	skill3[] = {
-		// {"aimingAccuracy",0.35,0.45},
-		{"aimingAccuracy",0.20,0.25},  // AI will still be accurate but not godlike  
+		{"aimingAccuracy",0.35,0.45},
+		{"aimingAccuracy",0.20,0.25},	// AI will still be accurate but not godlike  
 		{"aimingShake",0.60,0.80},
 		{"aimingSpeed",0.60,0.80},
-		// {"spotDistance",0.80,0.90},
-		{"spotDistance",0.60,0.75},    // AI wont spot players instantly from far away  
+		{"spotDistance",0.30,0.50},
+		{"spotTime",0.30,0.50},		// AI wont spot players instantly from far away  
 		{"spotTime",0.30,0.50},
 		{"courage",0.80,0.90},
 		{"reloadSpeed",0.60,0.80},
@@ -667,7 +666,7 @@ class CfgA3XAISettings {
 	addVestChance0 = 0.60;
 	addVestChance1 = 0.70;
 	addVestChance2 = 0.80;
-	// addVestChance3 = 0.90;
+	addVestChance3 = 0.90;
 	addVestChance3 = 0.50;  // 50% chance AI get heavy vests
 	
 	//Probabilities to equip headgear, according to AI level.
@@ -731,13 +730,13 @@ class CfgA3XAISettings {
 	ammoLootPerWeapon = 3;
 	
 	//Maximum number of food loot items from foodLoot found in vehicles recovered by players. (Default: 10)								
-	foodLootVehicleCount = 10;
+	foodLootVehicleCount = 2;
 	
 	//Maximum number of items to select from miscLoot found in vehicles recovered by players. (Default: 10)											
-	miscLootVehicleCount = 10;
+	miscLootVehicleCount = 2;
 	
 	//Maximum number of items to select from medicalLoot found in vehicles recovered by players. (Default: 5)											
-	medicalLootVehicleCount = 5;
+	medicalLootVehicleCount = 2;
 	
 	/*	AI loot probability settings. AI loot is pre-generated into a pool for each unit and randomly pulled to units as time passes.
 	--------------------------------------------------------------------------------------------------------------------*/
